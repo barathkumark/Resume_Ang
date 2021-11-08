@@ -1,0 +1,107 @@
+@import "~@angular/material/theming";
+@include mat-core();
+
+$md-color: (
+  50 : #e5e7ea,
+  100 : #bdc4cb,
+  200 : #929da8,
+  300 : #667585,
+  400 : #45586b,
+  500 : #364a63,
+  600 : #20344a,
+  700 : #1b2c40,
+  800 : #162537,
+  900 : #0d1827,
+  A100 : #66a3ff,
+  A200 : #3385ff,
+  A400 : #0066ff,
+  A700 : #005ce6,
+  contrast: (
+      50 : #000000,
+      100 : #000000,
+      200 : #000000,
+      300 : #ffffff,
+      400 : #ffffff,
+      500 : #ffffff,
+      600 : #ffffff,
+      700 : #ffffff,
+      800 : #ffffff,
+      900 : #ffffff,
+      A100 : #ffffff,
+      A200 : #ffffff,
+      A400 : #ffffff,
+      A700 : #ffffff,
+  )
+);
+
+
+$my-primary: mat-palette($md-color);
+$my-accent: mat-palette($mat-light-blue);
+$my-warn: mat-palette($mat-red);
+
+$my-theme: mat-light-theme($my-primary, $my-accent, $my-warn);
+
+@include angular-material-theme($my-theme);
+
+$myapp-font-family: "Zen Maru Gothic', sans-serif";
+
+$my-typography: mat-typography-config(
+  $font-family: quote($myapp-font-family),
+  $display-4: mat-typography-level(112px, 112px, 300, $letter-spacing: -0.05em),
+  $display-3: mat-typography-level(56px, 56px, 400, $letter-spacing: -0.02em),
+  $display-2: mat-typography-level(45px, 48px, 400, $letter-spacing: -0.005em),
+  $display-1: mat-typography-level(34px, 40px, 400,quote($myapp-font-family)),
+  $headline: mat-typography-level(24px, 32px, 700,quote($myapp-font-family)), 
+  $title: mat-typography-level(20px, 32px, 700,quote($myapp-font-family)),
+  $subheading-2: mat-typography-level(16px, 28px, 700,quote($myapp-font-family)),
+  $subheading-1: mat-typography-level(15px, 24px, 400,quote($myapp-font-family)),
+  $body-2: mat-typography-level(14px, 24px, 700, quote($myapp-font-family)),
+  $body-1: mat-typography-level(14px, 20px, 400),
+  $caption: mat-typography-level(12px, 20px, 400),
+  $button: mat-typography-level(15px, 13px, 500),
+  $input: mat-typography-level(12px, 1, 400)
+);
+
+.custom-typography {
+    @include angular-material-typography($my-typography);
+}
+
+@font-face {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(assets/font/ZenMaruGothic-300.ttf) format('ttf');
+   }
+
+   @font-face {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(assets/font//ZenMaruGothic-400.ttf) format('ttf');
+   }
+
+   @font-face {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(assets/font/ZenMaruGothic-500.ttf) format('ttf');
+   }
+
+   @font-face {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(assets/font/ZenMaruGothic-700.ttf) format('ttf');
+   }
+
+   @font-face {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(assets/font/ZenMaruGothic-900.ttf) format('ttf');
+   }

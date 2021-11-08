@@ -1,0 +1,115 @@
+<div class="container py-5">
+    <div class="row py-5">
+        <div class="col-12 col-md-6">
+            <div class="mat-title heading-color pt-md-5 mt-lg-4 mb-4">
+                <b>“</b> Education is the passport to the future, for tomorrow belongs to those who prepare for it
+                today. <b>”</b>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <!-- <div class=""> -->
+            <img src="assets/education.svg" alt="" class="img-fluid">
+            <!-- </div> -->
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 text-center mb-5">
+            <div class="mat-display-1 font-weight-500 heading-color mb-3">
+                Education
+            </div>
+        </div>
+        <div class="col-12">
+            <mat-horizontal-stepper class="mat-elevation-z6">
+                <mat-step label="Academics">
+                    <div class="row py-5">
+                        <div class="col-12 col-md-5 col-lg-6">
+                            <div class="mat-h1 font-weight-600 headling-color text-center pt-md-4 mt-md-3 mb-3">
+                                Graduation
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7 col-lg-5 text-center">
+                            <mat-card class="mat-elevation-z10">
+                                <div class="mat-h2 font-weight-500 mb-1">
+                                    Gnanamani College of Engineering
+                                </div>
+                                <div class="mat-body-2">
+                                    <i> Computer Science and Engineering </i>
+                                </div>
+                                <div class="mat-small">
+                                    2011-2015
+                                </div>
+                            </mat-card>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-5 col-lg-6">
+                            <div class="mat-h1 font-weight-600 headling-color text-center pt-md-4 mt-md-3 mb-3">
+                                High School
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7 col-lg-5 text-center">
+                            <mat-card class="mat-elevation-z10">
+                                <div class="mat-h2 font-weight-500 mb-1">
+                                    Vedhha Vikass Higher Secondary School
+                                </div>
+                                <div class="mat-body-2">
+                                    <i> State Board </i>
+                                </div>
+                                <div class="mat-small">
+                                    2009-2011
+                                </div>
+                            </mat-card>
+                        </div>
+                    </div>
+                    <div class="row py-5">
+                        <div class="col-12 col-md-5 col-lg-6">
+                            <div class="mat-h1 font-weight-600 headling-color text-center pt-md-4 mt-md-3 mb-3">
+                                SSLC
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7 col-lg-5 text-center">
+                            <mat-card class="mat-elevation-z10">
+                                <div class="mat-h2 font-weight-500 mb-1">
+                                    Gnanamani College of Engineering
+                                </div>
+                                <div class="mat-body-2">
+                                    <i> Central Board </i>
+                                </div>
+                                <div class="mat-small">
+                                    2009
+                                </div>
+                            </mat-card>
+                        </div>
+                    </div>
+                    <div class="float-right">
+                        <button mat-raised-button matStepperNext color="primary">Next</button>
+                    </div>
+                </mat-step>
+                <mat-step label="Online Accreditations">
+                    <div class="col-9 mx-auto">
+                        <div class="row">
+                            <div class="col-12 col-md-4 text-center">
+                                <img src="assets/Angular.JPG" alt="" class="img-fluid">
+                                <button class="my-3" mat-raised-button color="accent"
+                                    (click)="show_angular_certificate();">View Certificate</button>
+                            </div>
+                            <div class="col-12 col-md-4 text-center">
+                                <img src="assets/React.jpg" alt="" class="img-fluid">
+                                <button class="my-3" mat-raised-button color="accent"
+                                    (click)="show_react_certificate();">View Certificate</button>
+                            </div>
+                            <div class="col-12 col-md-4 text-center">
+                                <img src="assets/Bootcamp.jpg" alt="" class="img-fluid">
+                                <button class="my-3" mat-raised-button color="accent"
+                                    (click)="show_bootcamp_certificate();">View Certificate</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <button mat-raised-button matStepperPrevious color="primary">Back</button>
+                    </div>
+                </mat-step>
+            </mat-horizontal-stepper>
+        </div>
+    </div>
+</div>
